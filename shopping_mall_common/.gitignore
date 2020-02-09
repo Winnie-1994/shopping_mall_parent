@@ -1,0 +1,9 @@
+/target/
+/log.base_IS_UNDEFINED/
+/.settings/
+/log/
+/logs/
+/.idea/
+.project
+.classpath
+*.iml

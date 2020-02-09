@@ -1,0 +1,28 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    password: Ting1994!
+    username: vander
+    url: jdbc:mysql://192.168.87.11:3306/db_panda_test
+#    url: jdbc:mysql://192.168.118.168:3306/shoppingMall
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server.port: 8080
+
+dubbo:
+  application:
+    name: shopping_mall_manage_web
+  registry:
+    address: zookeeper://192.168.87.11:2181
+#    address: zookeeper://192.168.118.168:2181
+  consumer:
+    timeout: 3000
+
+logging:
+  level:
+    org.springframework.security: INFO

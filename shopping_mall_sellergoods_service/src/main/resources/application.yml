@@ -1,0 +1,14 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+server.port: 81
+
+dubbo:
+  application:
+    name: shopping_mall_sellergoods_service
+  registry:
+#    address: zookeeper://192.168.118.168:2181
+    address: zookeeper://192.168.87.11:2181
+  consumer:
+    timeout: 3000
